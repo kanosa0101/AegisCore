@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv run *)",
+      "Bash(python -m py_compile tests/test_metrics.py tests/test_safety_invariants.py)",
+      "Bash(python -m py_compile aegiscore/models.py)"
+    ]
+  }
+}

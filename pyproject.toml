@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aegiscore"
+version = "0.1.0"
+description = "AegisCore - A robust local coding agent for code repositories"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+aegiscore = "aegiscore.cli:main"
+
+[dependency-groups]
+dev = [
+  "pytest>=8.3.5",
+  "ruff>=0.4.4",
+]
+
+[tool.setuptools]
+packages = ["aegiscore"]
